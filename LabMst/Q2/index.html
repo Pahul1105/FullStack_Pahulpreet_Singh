@@ -1,1 +1,18 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <p id="para">This is a paragraph.</p>
+    <button onclick="changeContent()">Click Me</button>
+    <script>
+        function changeContent(){
+            var p = document.getElementById("para");
+            p.innerText="Welcome to JavaScript DOM manipulation";
+            p.style.color="blue";
+            p.style.fontSize="24px";
+        }
+    </script>
+</body>
+</html>
